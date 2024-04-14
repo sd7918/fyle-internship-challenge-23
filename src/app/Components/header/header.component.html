@@ -1,0 +1,19 @@
+<div class="headContainer">
+    <div class="getUserName">
+        <p>User name please</p>
+        <input type="text" [(ngModel)]="username" placeholder="Enter username" id="userinput">
+        <button (click)="getUserData()">Get Data</button>
+    </div>
+    <div class="row">
+        <div class="left">
+            <img [src]="userData.avatar_url" alt="">
+        </div>
+        <div class="right">
+            <h1>{{userData.name}}</h1>
+            <p>{{userData.bio}}</p>
+            <p><i class="fa-solid fa-location-dot"></i>{{userData.location}}</p>
+            <p>{{userData.twitter_username}}</p>
+        </div>
+    </div>
+    <p><i class="fa-solid fa-link"></i>{{userData.html_url}}</p>
+</div>

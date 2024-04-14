@@ -1,0 +1,7 @@
+<div class="list">
+    <app-repo-card *ngFor="let repo of repoList | paginate:{itemsPerPage:6,currentPage:repoList}" [repo]="repo" ></app-repo-card>
+
+
+</div>
+<pagination-controls (pageChange)="repoList = $event" class="floght-right"></pagination-controls>
+  

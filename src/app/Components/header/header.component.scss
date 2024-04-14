@@ -1,0 +1,46 @@
+.headContainer{
+    // border: 2px solid red;
+    padding: 20px;  
+    font-size: 20px;
+    // position: relative;
+}
+.row{
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    padding-bottom: 10px;
+}
+.left img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.right{
+    padding-top: 10px;
+    line-height: 40px
+}
+.right h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.getUserName{
+    display: flex;
+    gap: 10px;
+    // position:absolute;
+    z-index: 11;
+    align-items: center;
+    justify-content: flex-end;
+}
+#userinput{
+    border: 1px solid black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.getUserName button{
+    background-color: skyblue;
+    font-size: 17px;
+    padding: 5px;
+    border-radius: 6px;
+    color:rgb(36, 36, 36);
+}

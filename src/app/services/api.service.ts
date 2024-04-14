@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { tap, throwError } from 'rxjs';
+import { Observable, catchError, tap, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -16,4 +16,13 @@ export class ApiService {
   }
 
   // implement getRepos method by referring to the documentation. Add proper types for the return type and params 
+  getRepos(githubUsername: string): Observable<any[]> {
+    return this.httpClient.get<any[]>(`https://api.github.com/users/${githubUsername}/repos`).pipe(catchError((error: any) => throwError(error)));
+  }
+
+// getRepoLanguages(owner: string, repo: string): Observable<any> {
+//   return this.httpClient.get<any>(`https://api.github.com/repos/${owner}/${repo}/languages`).pipe(
+//     catchError((error: any) => throwError(error))
+//   );
+// }
 }

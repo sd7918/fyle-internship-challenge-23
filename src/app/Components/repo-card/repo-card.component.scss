@@ -1,0 +1,33 @@
+.container{
+    height:200px;
+    width: 500px;
+    border: 2px solid red;
+    // line-height: 30px;
+    padding: 10px;
+}
+.container h1{
+    font-size: 23px;
+    font-weight: bold;
+    color: skyblue;
+    padding-bottom: 5   px;
+}
+.container p{
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+.tile{
+    display: flex;
+    justify-content: flex-start;
+    // gap: 10px;
+}
+.tile span{
+    padding: 2px 5px;
+    // border: 2px solid red;
+    background: skyblue;
+    margin-right: 5px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+
+}
